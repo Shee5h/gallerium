@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Regular CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Elektroninė galerija Gallerium</title>
+</head>
+
+<!--------------------------------- Body --------------------------------->
+
+<body class="bg-dark bg-opacity-25">
+    <div class="container">
+
+        <!--------------------------------- Header --------------------------------->
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">Gallerium</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mynavbar"><span class="navbar-toggler-icon"></span></button>
+
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Mėgstamiausi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Bendruomenė</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacts.html" class="nav-link">Kontaktai</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">Žanrai
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content" id="myDropdown">
+                                        <a href="Paintings.html">Paintings</a>
+                                        <a href="Sculptures.html">Sculptures</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <button id="button-day" class="btn btn-light" type="button">Daylight</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="button-night" class="btn btn-success" type="button">Nightlight</button>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" action="/search">
+                            <input type="text" class="form-control" placeholder="Search" name="keyword">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-container" style="position: relative;">
+                <div class="header-image mb-5"></div>
+
+                <div class="bottom-left">
+                    <img src="https://www.theartist.me/wp-content/uploads/2017/08/Adoration-of-the-Magi-by-Leonardo-da-Vinci.jpg"
+                        alt="" class="d-none d-md-block">
+                </div>
+
+                <div class="top-left">
+                    <img src="https://www.theartist.me/wp-content/uploads/2017/08/Lady-with-an-Ermine-by-Leonardo-da-Vinci.jpg"
+                        alt="" class="d-none d-md-block">
+                </div>
+
+                <div class="top-right">
+                    <img src="https://m.media-amazon.com/images/I/71U4WPakgqL._AC_SX466_.jpg" alt=""
+                        class="d-none d-md-block">
+                </div>
+
+                <div class="bottom-right">
+                    <img src="https://www.theartist.me/wp-content/uploads/2017/08/Mona-Lisa-by-Leonardo-da-Vinci.jpg"
+                        alt="" class="d-none d-md-block">
+                </div>
+            </div>
+        </header>
+
+        <!--------------------------------- Main --------------------------------->
+
+        <main>
+            <div class="row mb-2 mb-md-5">
+                <aside class="col-12 col-lg-6 text-center text-lg-start">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/800px-Raffaello_Sanzio.jpg"
+                        alt="Presumed portrait of Raphael"
+                        class="main-artist-portrait-size img-fluid ms-0 ms-lg-5 mb-5 mb-lg-0">
+                </aside>
+
+                <article class="col-12 col-lg-6">
+                    <h2>Raphael</h2>
+                    <p><b>Raffaello Sanzio da Urbino</b> (Italian: [raffaˈɛllo ˈsantsjo da urˈbiːno]; March 28 or April
+                        6, 1483 – April 6, 1520), known mononymously as Raphael, was an Italian painter and
+                        architect of the High Renaissance.</p>
+
+                    <p>His work is admired for its clarity of form, ease of
+                        composition, and visual achievement of the Neoplatonic ideal of human grandeur. Together
+                        with Michelangelo and Leonardo da Vinci, he forms the traditional trinity of great masters
+                        of that period.</p>
+
+                    <p>Raphael was enormously productive, running an unusually large workshop and, despite his early
+                        death at 37, leaving a large body of work. His career falls naturally into three phases and
+                        three styles, first described by Giorgio Vasari: his early years in Umbria, then a period of
+                        about four years (1504–1508) absorbing the artistic traditions of Florence, followed by his last
+                        hectic and triumphant twelve years in Rome, working for two popes and their close associates.
+                    </p>
+
+                </article>
+            </div>
+
+            <div class="row mb-2 mb-md-5">
+                <aside class="col">
+                    <h2>Iconic works of art: </h2>
+                </aside>
+            </div>
+
+            <div class="row">
+                <aside class="col-sm-12 col-md-6 col-lg-4">
+                    <figure class="figure w-100 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1280px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
+                            alt="School of Athens" class="figure-img img-fluid main-artist-img-1">
+                        <figcaption class="figure-caption"><i>School of Athens</i></figcaption>
+
+                        <div class="middle">
+                            <div class="text">
+                                <a href="raphael-art.html#school">Find out more...</a>
+                            </div>
+                        </div>
+                    </figure>
+                </aside>
+
+                <aside class="col-sm-12 col-md-6 col-lg-4">
+                    <figure class="figure w-100 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Raphael_Madonna_of_the_Pinks.jpg"
+                            alt="Madonna of the Pinks" class="figure-img img-fluid main-artist-img-2">
+                        <figcaption class="figure-caption"><i>Madonna of the Pinks</i></figcaption>
+
+                        <div class="middle" style="margin-top: -3em;">
+                            <div class="text">
+                                <a href="raphael-art.html#madonna">Find out more...</a>
+                            </div>
+                        </div>
+                    </figure>
+                </aside>
+
+                <aside class="col-sm-12 col-md-12 col-lg-4">
+                    <figure class="figure w-100 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/4_Estancia_del_Sello_%28El_Parnaso%29.jpg"
+                            alt="Parnaso" class="figure-img img-fluid main-artist-img-3">
+                        <figcaption class="figure-caption"><i>The Parnassus</i></figcaption>
+
+                        <div class="middle">
+                            <div class="text">
+                                <a href="raphael-art.html#parnassus">Find out more...</a>
+                            </div>
+                        </div>
+                    </figure>
+                </aside>
+            </div>
+
+            <div class="row">
+                <aside class="col-sm-12 col-md-6 col-lg-4">
+                    <figure class="figure w-100 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Raphael_Spasimo.jpg" alt="Spasimo"
+                            class="figure-img img-fluid main-artist-img-4">
+                        <figcaption class="figure-caption"><i>Spasimo</i></figcaption>
+
+                        <div class="middle">
+                            <div class="text">
+                                <a href="raphael-art.html#spasimo">Find out more...</a>
+                            </div>
+                        </div>
+                    </figure>
+                </aside>
+
+                <aside class="col-sm-12 col-md-6 col-lg-4">
+                    <figure class="figure w-100 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/La_Fornarina_by_Raffaello.jpg"
+                            alt="Fornarina" class="figure-img img-fluid main-artist-img-5">
+                        <figcaption class="figure-caption"><i>Fornarina</i></figcaption>
+
+                        <div class="middle" style="margin-top: -6em;">
+                            <div class="text">
+                                <a href="raphael-art.html#fornarina">Find out more...</a>
+                            </div>
+                        </div>
+                    </figure>
+                </aside>
+
+                <aside class="col-sm-12 col-md-12 col-lg-4">
+                    <figure class="figure w-100 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Raimondi_Lucretia%27s_suicide.jpg"
+                            alt="Lucretia" class="figure-img img-fluid main-artist-img-6">
+                        <figcaption class="figure-caption">Lucretia</figcaption>
+
+                        <div class="middle">
+                            <div class="text">
+                                <a href="raphael-art.html#lucretia">Find out more...</a>
+                            </div>
+                        </div>
+                    </figure>
+                </aside>
+            </div>
+
+        </main>
+
+        <!--------------------------------- Footer --------------------------------->
+
+        <footer>
+            <hr>
+            <div class="row mt-3">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <ul style="list-style: none; padding: 0;">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-facebook m-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                            <a href="#">Facebook</a>
+                        </li>
+
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-twitter mx-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                            <a href="#">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-6" style="text-align:center;">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+
+                    <a href="#aModal" data-bs-toggle="modal">Sign up for our newsletter</a>
+
+                    <!-- Pop-up that's attached to the newsletter link -->
+                    <div class="modal fade" tabindex="-1" id="aModal" aria-labelledby="aModal" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!--modal header -->
+                                <div class="modal-header" style="background-color: rgb(95, 95, 95);">
+                                    <h5 class="modal-title" style="color: white;">Sign up for our newsletter!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!--modal body -->
+                                <div class="modal-body">
+                                    <p>Subscribe for our newsletter to stay up to date with new artists and their
+                                        artworks.</p>
+
+                                    <!--vvv icon vvv -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-envelope-heart" viewBox="0 0 16 16"
+                                        style="padding-right: 10px; padding-bottom: 5px;">
+                                        <path fill-rule="evenodd"
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                                    </svg>
+
+                                    <input type="email" placeholder="Enter your email here..">
+                                </div>
+                                <!--modal footer -->
+                                <div class="modal-footer" style="background-color: rgb(201, 201, 201);">
+                                    <div id="modal-close-button-config">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                    <div id="modal-sub-button-config">
+                                        <button type="button" class="btn btn-primary">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p style="text-align: right;">Copyright © 2022-2022 Gallerium Inc. All Rights Reserved.</p>
+        </footer>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    </div>
+
+    <button onclick="topFunction()" class="bi bi-arrow-up-circle-fill" title="Go to top"></button>
+
+    <script src="javascript/main.js"></script>
+
+</body>
+
+</html>
